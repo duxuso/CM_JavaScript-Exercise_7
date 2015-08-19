@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-plugin.js"></script>
+    <meta charset="UTF-8">
+    <title>jQuery plugin: popup new window when clicking a link</title>
+</head>
+<body>
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#f0fff0">
+    <tr><td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;border: solid #808080 2px;">
+        <table cellpadding="0" cellspacing="0" width="800px" border="1">
+            <thead>
+            <tr>
+                <td align="center" valign="top" colspan="3" style="font-family: Helvetica, Arial, sans-serif;"><h2>Javascript Requirements</h2></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td align="left" valign="top" height="40px" style="font-family: Helvetica, Arial, sans-serif;" colspan="3" bgcolor="#87cefa"><b>Requirement 7</b> Write a jQuery plugin which, given a jQuery object containing anchor elements (e.g $('a')), makes clicking on those elements open the link target in a new window.<br/> The plugin should:<br/><ul><li>Ensure that links with the same data­window­group open in the same window</li><li>Take an option object used to set the features on the new window (size, position, scrollbars, etc.), sensible defaults should be supplied by the plugin.</li></ul></td></tr>
+            <tr><td align="center" valign="middle" height="40px" style="font-size: 14px;"><a href="http://www.google.com" data-window-group="group1"  >www.google.com</a></td></tr>
+            <tr><td align="center" valign="middle" height="40px" style="font-size: 14px;"><a href="http://www.apple.com" data-window-group="group2"  >www.apple.com</a></td></tr>
+            <tr><td align="center" valign="middle" height="40px" style="font-size: 14px;"><a href="http://www.amazon.com" data-window-group="group1"  >www.amazon.com</a></td></tr>
+            <tr><td align="center" valign="middle" height="40px" style="font-size: 14px;"><a href="http://www.facebook.com" data-window-group="group2"  >www.facebook.com</a></td></tr>
+            <tr><td align="center" valign="middle" height="40px" style="font-size: 14px;"><a href="http://www.stackoverflow.com" data-window-group="group1"  >www.stackoverflow.com</a></td></tr>
+            </tbody>
+
+        </table></td></tr></table>
+<script>
+
+    $('a').hello2();
+    /*
+     $('a').hello2({
+     windowSize : "width=200,height=200,toolbar=yes, scrollbars=yes,resizable=yes,top=200,left=200"
+     });
+     */
+    /*
+     $('a').hello2({
+     windowSize : "width=300,height=300,toolbar=yes, scrollbars=yes,resizable=yes,top=300,left=300"
+     });
+     */
+    /*
+     $('a').hello2({
+     windowSize : "width=400,height=400,toolbar=yes, scrollbars=yes,resizable=yes,top=400,left=400"
+     });
+     */
+    /*
+     $('a').hello2({
+     windowSize : "width=500,height=500,toolbar=yes, scrollbars=yes,resizable=yes,top=500,left=500"
+     });
+     */
+    /*
+     $('a').hello2({
+     windowSize : "width=50,height=50,toolbar=yes, scrollbars=yes,resizable=yes,top=50,left=50"
+     });
+     */
+</script>
+
+</body>
+</html>
